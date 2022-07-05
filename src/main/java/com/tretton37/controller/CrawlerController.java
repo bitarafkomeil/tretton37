@@ -1,6 +1,6 @@
 package com.tretton37.controller;
 
-import com.tretton37.response.CrawlerResponse;
+import com.tretton37.response.CrawlResponse;
 import com.tretton37.service.CrawlerService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +17,8 @@ public class CrawlerController {
     }
 
     @PostMapping()
-    public ResponseEntity<CrawlerResponse> crawl() {
-        CrawlerResponse crawlerResponse = crawlerService.crawl();
+    public ResponseEntity<CrawlResponse> crawl() {
+        CrawlResponse crawlerResponse = crawlerService.crawl();
         return ResponseEntity.ok().body(crawlerResponse);
     }
 }

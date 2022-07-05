@@ -1,7 +1,7 @@
 package com.tretton37.service;
 
-import com.tretton37.response.CrawlerResponse;
+import com.tretton37.response.CrawlResponse;
 
 public interface CrawlerService {
-    CrawlerResponse crawl();
+    CrawlResponse crawl();
 }
