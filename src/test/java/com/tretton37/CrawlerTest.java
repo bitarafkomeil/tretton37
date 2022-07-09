@@ -33,7 +33,7 @@ class CrawlerTest {
 
     @Test
     @Order(1)
-    public void createCompany() throws Exception {
+    public void crawl() throws Exception {
 
         ResultActions resultActions = mockMvc.perform(MockMvcRequestBuilders
                 .post("/api/v1/crawler")
