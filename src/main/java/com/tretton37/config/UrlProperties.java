@@ -8,5 +8,5 @@ import org.springframework.stereotype.Component;
 @Data
 @ConfigurationProperties("params.url")
 public class UrlProperties {
-    private String url;
+    private String url = "https://1337.tech/";
 }

@@ -79,7 +79,9 @@ public class CrawlingUtils {
     }
 
     public Path createDirectory(String path) throws IOException {
-        Path directory = Paths.get(currentWorkDir, path.replaceAll(":", ""));
+        path = path.replaceAll(":", "");
+        path = path.replaceAll("\\?", "");
+        Path directory = Paths.get(currentWorkDir, path);
         if (!path.isEmpty()) {
             if (Files.notExists(directory)) {
                 System.out.println("Trying To Create Directory " + directory);
